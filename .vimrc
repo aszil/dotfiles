@@ -74,4 +74,5 @@ inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 
+" ESCキーをjjにする
 inoremap <silent> jj <ESC>
