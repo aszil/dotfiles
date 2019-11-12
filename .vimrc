@@ -14,6 +14,16 @@ if dein#load_state('~/.cache/dein')
     call dein#add('roxma/vim-hug-neovim-rpc')
 
     call dein#add('scrooloose/nerdtree')
+    call dein#add('tpope/vim-fugitive')
+    call dein#add('airblade/vim-gitgutter')
+    call dein#add('tpope/vim-surround')
+    call dein#add('ryanoasis/vim-devicons')
+    call dein#add('ryanoasis/nerd-fonts')
+    call dein#add('vim-airline/vim-airline')
+    call dein#add('jiangmiao/auto-pairs')
+    call dein#add('tpope/vim-commentary')
+    call dein#add('pangloss/vim-javascript')
+    call dein#add('MaxMEllon/vim-jsx-pretty')
 
   endif
 
@@ -31,6 +41,19 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Ctrl + n でNERDTree起動
 map <C-n> :NERDTreeToggle<CR>
+
+" guifontを設定しないと文字化けになる。terminalで行ったフォントの設定と同様
+" 公式サイトではLinuxとmacOSの設定が若干異なるが、Linuxの設定でもmacOSで問題なし
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ 12
+set encoding=utf-8
+
+" フォルダアイコンを表示
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
+let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
+" after a re-source, fix syntax matching issues (concealing brackets):
+if exists('g:loaded_webdevicons')
+  call webdevicons#refresh()
+endif
 
 
 
