@@ -25,6 +25,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('pangloss/vim-javascript')
     call dein#add('MaxMEllon/vim-jsx-pretty')
     call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
+    call dein#add('elmcast/elm-vim')
 
   endif
 
@@ -35,6 +36,16 @@ endif
 filetype plugin indent on
 syntax enable
 
+" elm
+let g:elm_jump_to_error = 0
+let g:elm_make_output_file = "elm.js"
+let g:elm_make_show_warnings = 0
+let g:elm_syntastic_show_warnings = 0
+let g:elm_browser_command = ""
+let g:elm_detailed_complete = 0
+let g:elm_format_autosave = 1
+let g:elm_format_fail_silently = 0
+let g:elm_setup_keybindings = 1
 
 " NERDTreeの設定
 autocmd StdinReadPre * let s:std_in=1
