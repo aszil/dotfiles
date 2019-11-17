@@ -26,6 +26,10 @@ if dein#load_state('~/.cache/dein')
     call dein#add('MaxMEllon/vim-jsx-pretty')
     call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
     call dein#add('elmcast/elm-vim')
+    call dein#add('sheerun/vim-polyglot')
+    call dein#add('dense-analysis/ale')
+    call dein#add('vim-syntastic/syntastic')
+    call dein#add('ycm-core/YouCompleteMe')
 
   endif
 
@@ -46,6 +50,16 @@ let g:elm_detailed_complete = 0
 let g:elm_format_autosave = 1
 let g:elm_format_fail_silently = 0
 let g:elm_setup_keybindings = 1
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+
+let g:elm_syntastic_show_warnings = 1
+
+let g:ycm_semantic_triggers = {
+     \ 'elm' : ['.'],
+     \}
+
 
 " NERDTreeの設定
 autocmd StdinReadPre * let s:std_in=1
