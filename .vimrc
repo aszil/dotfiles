@@ -195,3 +195,9 @@ inoremap <Right> <Nop>
 
 " ESCキーをjjにする
 inoremap <silent> jj <ESC>
+
+" Insertの時にカーソル移動
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
