@@ -30,6 +30,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('dense-analysis/ale')
     call dein#add('vim-syntastic/syntastic')
     call dein#add('ycm-core/YouCompleteMe')
+    call dein#add('terryma/vim-multiple-cursors')
 
   endif
 
@@ -66,7 +67,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Ctrl + n でNERDTree起動
-map <C-n> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
 
 " guifontを設定しないと文字化けになる。terminalで行ったフォントの設定と同様
 " 公式サイトではLinuxとmacOSの設定が若干異なるが、Linuxの設定でもmacOSで問題なし
