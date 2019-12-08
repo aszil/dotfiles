@@ -66,7 +66,7 @@ let g:ycm_semantic_triggers = {
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" Ctrl + n でNERDTree起動
+" Ctrl + t でNERDTree起動
 map <C-t> :NERDTreeToggle<CR>
 
 " guifontを設定しないと文字化けになる。terminalで行ったフォントの設定と同様
@@ -144,8 +144,6 @@ set cursorcolumn
 set virtualedit=onemore
 " インデントはスマートインデント
 set smartindent
-" ビープ音を可視化
-set visualbell
 " 括弧入力時の対応する括弧を表示
 set showmatch
 " ステータスラインを常に表示
