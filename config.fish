@@ -11,7 +11,7 @@ alias ga. 'git add .'
 
 alias gb 'git branch'
 
-alias gcmsg 'git commit -m'
+alias gcm 'git commit -m'
 
 alias gco 'git checkout'
 alias gcb 'git checkout -b'
