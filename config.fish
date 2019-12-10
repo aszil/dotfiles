@@ -32,8 +32,8 @@ alias gcm 'git commit -m'
 alias gco 'git checkout'
 alias gcb 'git checkout -b'
 
-alias ggpull 'git pull origin'
-alias ggpush 'git push origin'
+alias gll 'git pull origin'
+alias gsh 'git push origin'
 
 alias gst 'git status'
 
