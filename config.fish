@@ -1,6 +1,22 @@
+set -x XDG_CONFIG_HOME $HOME/.config
+set -x XDG_CACHE_HOME $HOME/.cache
+
 set -x PATH $HOME/.nodebrew/current/bin $PATH
 
 set -x ANDROID_HOME /Users/ci_arai/Library/Android/sdk
+
+set -Ux TERM xterm-color256
+
+# fzf
+set -U FZF_LEGACY_KEYBINDINGS 0
+set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
+
+
+# vim -> nvim
+alias vim 'nvim'
+
+# tmux alias
+alias t 'tmux'
 
 
 # git alias
