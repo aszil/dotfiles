@@ -59,17 +59,16 @@ au FileType go setlocal sw=4 ts=4 sts=4 noet
 "--------------------------------------------------------------
 vnoremap x "_x
 nnoremap x "_x
-nnoremap 1 ^
-nnoremap 2 $
 nnoremap <silent> , :bprev<CR>
 nnoremap <silent> . :bnext<CR>
 nnoremap \ :%s/old/new/g<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
 nnoremap bd :bd<CR>
 
 " 括弧の補完
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
+inoremap { {}<LEFT>
+inoremap ( ()<LEFT>
+inoremap [ []<LEFT>
+inoremap < <><LEFT>
 
 " クオーテーションの補完
 inoremap ' ''<LEFT>
