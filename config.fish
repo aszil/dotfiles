@@ -3,7 +3,7 @@ set -x XDG_CACHE_HOME $HOME/.cache
 
 set -x PATH $HOME/.nodebrew/current/bin $PATH
 
-set -x ANDROID_HOME /Users/ci_arai/Library/Android/sdk
+set -x ANDROID_HOME ~/library/android/sdk
 
 set -Ux TERM xterm-color256
 

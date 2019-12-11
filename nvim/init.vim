@@ -100,6 +100,9 @@ nnoremap sv :<C-u>vs<CR><C-w>l
 " esc -> jj
 inoremap <silent> jj <ESC>
 
+" 検索ハイライト削除
+nnoremap <C-L> :nohlsearch<CR><C-L>
+
 " <<<
 
 "dein Scripts-----------------------------
@@ -108,15 +111,15 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/araishinya/.cache/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/Users/araishinya/.cache/dein')
-  call dein#begin('/Users/araishinya/.cache/dein')
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/Users/araishinya/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here like this:
   "call dein#add('Shougo/neosnippet.vim')
