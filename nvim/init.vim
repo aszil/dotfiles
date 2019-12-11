@@ -26,6 +26,7 @@ set belloff=all
 
 " 行番号系
 set number
+set relativenumber
 
 " タイトル系
 set title
