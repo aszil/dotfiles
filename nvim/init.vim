@@ -57,8 +57,6 @@ au FileType go setlocal sw=4 ts=4 sts=4 noet
 "--------------------------------------------------------------
 "          key bind                                         <<<
 "--------------------------------------------------------------
-vnoremap x "_x
-nnoremap x "_x
 nnoremap <silent> , :bprev<CR>
 nnoremap <silent> . :bnext<CR>
 nnoremap \ :%s/old/new/g<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
