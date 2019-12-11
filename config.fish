@@ -18,6 +18,10 @@ alias vim 'nvim'
 # tmux alias
 alias t 'tmux'
 
+# dotfiles alias
+alias dot 'cd ~/dotfiles'
+alias init 'cd ~/dotfiles/nvim; and vim init.vim'
+alias vish 'cd ~/dotfiles; and vim config.fish' 
 
 # git alias
 alias g 'git'
