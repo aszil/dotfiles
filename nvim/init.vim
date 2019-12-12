@@ -55,12 +55,21 @@ au FileType go setlocal sw=4 ts=4 sts=4 noet
 " <<<
 
 "--------------------------------------------------------------
+"          key mapping                                      <<<
+"--------------------------------------------------------------
+" <Leader>をスペースに
+let g:mapleader = "\<Space>"
+
+"--------------------------------------------------------------
 "          key bind                                         <<<
 "--------------------------------------------------------------
 nnoremap <silent> , :bprev<CR>
 nnoremap <silent> . :bnext<CR>
 nnoremap \ :%s/old/new/g<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
 nnoremap bd :bd<CR>
+
+" カーソル位置の行と列
+nnoremap <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
 " 括弧の補完
 inoremap { {}<LEFT>
