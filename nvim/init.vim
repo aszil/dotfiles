@@ -112,6 +112,9 @@ nnoremap sv :<C-u>vs<CR><C-w>l
 " esc -> jj
 inoremap <silent> jj <ESC>
 
+" 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
+inoremap <silent> っj <ESC>
+
 " 検索ハイライト削除
 nnoremap <C-L> :nohlsearch<CR><C-L>
 
