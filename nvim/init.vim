@@ -63,8 +63,8 @@ let g:mapleader = "\<Space>"
 "--------------------------------------------------------------
 "          key bind                                         <<<
 "--------------------------------------------------------------
-nnoremap <silent> <Leader>l :bprev<CR>
-nnoremap <silent> <Leader>h :bnext<CR>
+nnoremap <silent> 9 :bprev<CR>
+nnoremap <silent> 0 :bnext<CR>
 nnoremap \ :%s/old/new/g<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
 nnoremap bd :bd<CR>
 
