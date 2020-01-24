@@ -18,6 +18,11 @@ alias vim 'nvim'
 # tmux alias
 alias t 'tmux'
 
+# tmux 自動起動
+if test -z $TMUX
+  tmux new-session
+end
+
 # dotfiles alias
 alias dot 'cd ~/dotfiles'
 alias init 'cd ~/dotfiles/nvim; and vim init.vim'
