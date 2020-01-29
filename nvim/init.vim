@@ -65,8 +65,11 @@ let g:mapleader = "\<Space>"
 "--------------------------------------------------------------
 nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
-nnoremap \ :%s/old/new/g<LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT><LEFT>
 nnoremap <Leader>d :bd<CR>
+
+" 置換
+nnoremap <Leader>r :%s/old/new/gc
+vnoremap <Leader>r :s/old/new/gc
 
 " カーソル位置の行と列
 nnoremap <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
