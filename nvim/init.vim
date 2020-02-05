@@ -68,8 +68,8 @@ nnoremap <silent> <C-k> :bnext<CR>
 nnoremap <Leader>d :bd<CR>
 
 " 空行挿入
-nnoremap <Leader>o o<ESC>
-nnoremap <Leader><S-o> O<ESC>
+nnoremap <Leader>o o<ESC><Up>
+nnoremap <Leader><S-o> O<ESC><Down>
 
 " 置換
 nnoremap <Leader>r :%s/old/new/gc
