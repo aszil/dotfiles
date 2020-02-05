@@ -67,6 +67,10 @@ nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
 nnoremap <Leader>d :bd<CR>
 
+" 空行挿入
+nnoremap <Leader>o o<ESC>
+nnoremap <Leader><S-o> O<ESC>
+
 " 置換
 nnoremap <Leader>r :%s/old/new/gc
 vnoremap <Leader>r :s/old/new/gc

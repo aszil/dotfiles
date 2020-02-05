@@ -32,7 +32,6 @@ alias vish 'cd ~/dotfiles; and vim config.fish'
 alias g 'git'
 
 alias ga 'git add'
-alias ga. 'git add .'
 
 alias gb 'git branch'
 
@@ -40,6 +39,8 @@ alias gcm 'git commit -m'
 
 alias gco 'git checkout'
 alias gcb 'git checkout -b'
+
+alias gf 'git fetch'
 
 alias gll 'git pull origin'
 alias gsh 'git push origin'
