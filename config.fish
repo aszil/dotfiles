@@ -11,6 +11,8 @@ set -Ux TERM xterm-color256
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
 
+# lazygit alias
+alias lg 'lazygit'
 
 # vim -> nvim
 alias vim 'nvim'
