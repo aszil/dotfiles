@@ -7,6 +7,9 @@ set -x ANDROID_HOME ~/library/android/sdk
 
 set -Ux TERM xterm-color256
 
+# sbt
+set -g fish_user_paths "/usr/local/opt/sbt@0.13/bin" $fish_user_paths
+
 # fzf
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -U FZF_REVERSE_ISEARCH_OPTS "--reverse --height=100%"
